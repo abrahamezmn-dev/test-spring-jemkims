@@ -26,7 +26,7 @@ public class ThemeParkApplicationIT {
                 .andExpect(status().isOk())
                 .andReturn();
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/rides")
+        mockMvc.perform(MockMvcRequestBuilders.get("/ride")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound())
                 .andReturn();
